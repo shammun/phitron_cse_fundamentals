@@ -40,6 +40,16 @@ int main(){
     // We can't reverse the order of elements in set
     // If we really have to, we can put it in vector and print it in reverse order
 
+    vector<int> v;
+    for(auto it = s.begin(); it != s.end(); it++){
+        v.push_back(*it);
+    }
+    reverse(v.begin(), v.end());
+    
+    for(int x : v){
+        cout << x << " ";
+    }
+
     // Is an element present?
     // Is 4 present in the set?
 
